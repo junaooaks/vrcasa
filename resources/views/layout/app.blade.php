@@ -10,6 +10,18 @@
       <meta name="keywords" content="Vr Casas 360 photos 3d tour">
       <!-- CSRF Token -->
       <meta name="csrf-token" content="{{ csrf_token() }}">
+
+
+      <!-- MDBootstrap -->
+      <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+     <!-- Bootstrap tooltips -->
+     <script type="text/javascript" src="js/popper.min.js"></script>
+     <!-- Bootstrap core JavaScript -->
+     <script type="text/javascript" src="js/bootstrap.min.js"></script>
+     <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+
+
       <link rel="icon" href="favicon.ico" type="image/x-icon">
       <link href="{{ asset('css/app.css') }}" rel="stylesheet">
       <link rel="stylesheet" href="{{ asset('css/style.css') }}">
