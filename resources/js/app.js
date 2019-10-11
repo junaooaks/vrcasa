@@ -13,13 +13,12 @@ require("./bootstrap");
  */
 
 require("./components/Home");
-//require("./components/Realestate");
-//require("./components/Photography");
-//require("./components/Business");
-//require("./components/Buy");
-//require("./components/Hotel");
-//require("./components/Sell");
-//require("./components/Owner");
-//require("./components/Rent");
+require("./components/Realestate");
+require("./components/Photography");
+require("./components/Buy");
+require("./components/Hotel");
+require("./components/Sell");
+require("./components/Owner");
+require("./components/Rent");
 require("./components/Singin");
 require("./components/Singup");

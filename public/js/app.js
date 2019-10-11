@@ -83402,15 +83402,21 @@ __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
  */
 
 
-__webpack_require__(/*! ./components/Home */ "./resources/js/components/Home.jsx"); //require("./components/Realestate");
-//require("./components/Photography");
-//require("./components/Business");
-//require("./components/Buy");
-//require("./components/Hotel");
-//require("./components/Sell");
-//require("./components/Owner");
-//require("./components/Rent");
+__webpack_require__(/*! ./components/Home */ "./resources/js/components/Home.jsx");
 
+__webpack_require__(/*! ./components/Realestate */ "./resources/js/components/Realestate.jsx");
+
+__webpack_require__(/*! ./components/Photography */ "./resources/js/components/Photography.jsx");
+
+__webpack_require__(/*! ./components/Buy */ "./resources/js/components/Buy.jsx");
+
+__webpack_require__(/*! ./components/Hotel */ "./resources/js/components/Hotel.jsx");
+
+__webpack_require__(/*! ./components/Sell */ "./resources/js/components/Sell.jsx");
+
+__webpack_require__(/*! ./components/Owner */ "./resources/js/components/Owner.jsx");
+
+__webpack_require__(/*! ./components/Rent */ "./resources/js/components/Rent.jsx");
 
 __webpack_require__(/*! ./components/Singin */ "./resources/js/components/Singin.jsx");
 
@@ -83460,6 +83466,76 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 //     cluster: process.env.MIX_PUSHER_APP_CLUSTER,
 //     encrypted: true
 // });
+
+/***/ }),
+
+/***/ "./resources/js/components/Buy.jsx":
+/*!*****************************************!*\
+  !*** ./resources/js/components/Buy.jsx ***!
+  \*****************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Buy; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _layouts_Menu__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./layouts/Menu */ "./resources/js/components/layouts/Menu.jsx");
+/* harmony import */ var _layouts_Footerbar__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./layouts/Footerbar */ "./resources/js/components/layouts/Footerbar.jsx");
+function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+
+
+
+
+
+var Buy =
+/*#__PURE__*/
+function (_Component) {
+  _inherits(Buy, _Component);
+
+  function Buy() {
+    _classCallCheck(this, Buy);
+
+    return _possibleConstructorReturn(this, _getPrototypeOf(Buy).apply(this, arguments));
+  }
+
+  _createClass(Buy, [{
+    key: "render",
+    value: function render() {
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "page text-center"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_layouts_Menu__WEBPACK_IMPORTED_MODULE_2__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "buy"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_layouts_Footerbar__WEBPACK_IMPORTED_MODULE_3__["default"], null));
+    }
+  }]);
+
+  return Buy;
+}(react__WEBPACK_IMPORTED_MODULE_0__["Component"]);
+
+
+
+if (document.getElementById("buy")) {
+  react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.render(react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Buy, null), document.getElementById("buy"));
+}
 
 /***/ }),
 
@@ -83796,6 +83872,599 @@ function (_Component) {
 
 if (document.getElementById("home")) {
   react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.render(react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Home, null), document.getElementById("home"));
+}
+
+/***/ }),
+
+/***/ "./resources/js/components/Hotel.jsx":
+/*!*******************************************!*\
+  !*** ./resources/js/components/Hotel.jsx ***!
+  \*******************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Hotel; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var mdbreact__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! mdbreact */ "./node_modules/mdbreact/dist/mdbreact.esm.js");
+/* harmony import */ var _layouts_Menu__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./layouts/Menu */ "./resources/js/components/layouts/Menu.jsx");
+/* harmony import */ var _layouts_Footerbar__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./layouts/Footerbar */ "./resources/js/components/layouts/Footerbar.jsx");
+function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+
+
+
+
+
+
+var Hotel =
+/*#__PURE__*/
+function (_Component) {
+  _inherits(Hotel, _Component);
+
+  function Hotel() {
+    _classCallCheck(this, Hotel);
+
+    return _possibleConstructorReturn(this, _getPrototypeOf(Hotel).apply(this, arguments));
+  }
+
+  _createClass(Hotel, [{
+    key: "render",
+    value: function render() {
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "page text-center"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_layouts_Menu__WEBPACK_IMPORTED_MODULE_3__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(mdbreact__WEBPACK_IMPORTED_MODULE_2__["MDBRow"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(mdbreact__WEBPACK_IMPORTED_MODULE_2__["MDBCol"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "360\xB0 Hotel Tours"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(mdbreact__WEBPACK_IMPORTED_MODULE_2__["MDBRow"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(mdbreact__WEBPACK_IMPORTED_MODULE_2__["MDBCol"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Hotels & Spas Virtual Tours"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(mdbreact__WEBPACK_IMPORTED_MODULE_2__["MDBRow"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(mdbreact__WEBPACK_IMPORTED_MODULE_2__["MDBCol"], {
+        md: "3"
+      }, "1"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(mdbreact__WEBPACK_IMPORTED_MODULE_2__["MDBCol"], {
+        md: "3"
+      }, "2"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(mdbreact__WEBPACK_IMPORTED_MODULE_2__["MDBCol"], {
+        md: "3"
+      }, "3"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(mdbreact__WEBPACK_IMPORTED_MODULE_2__["MDBCol"], {
+        md: "3"
+      }, "4")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_layouts_Footerbar__WEBPACK_IMPORTED_MODULE_4__["default"], null));
+    }
+  }]);
+
+  return Hotel;
+}(react__WEBPACK_IMPORTED_MODULE_0__["Component"]);
+
+
+
+if (document.getElementById("hotel")) {
+  react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.render(react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Hotel, null), document.getElementById("hotel"));
+}
+
+/***/ }),
+
+/***/ "./resources/js/components/Owner.jsx":
+/*!*******************************************!*\
+  !*** ./resources/js/components/Owner.jsx ***!
+  \*******************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Owner; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _layouts_Menu__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./layouts/Menu */ "./resources/js/components/layouts/Menu.jsx");
+/* harmony import */ var _layouts_Footerbar__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./layouts/Footerbar */ "./resources/js/components/layouts/Footerbar.jsx");
+/* harmony import */ var mdbreact__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! mdbreact */ "./node_modules/mdbreact/dist/mdbreact.esm.js");
+function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+
+
+
+
+
+
+var Owner =
+/*#__PURE__*/
+function (_Component) {
+  _inherits(Owner, _Component);
+
+  function Owner() {
+    _classCallCheck(this, Owner);
+
+    return _possibleConstructorReturn(this, _getPrototypeOf(Owner).apply(this, arguments));
+  }
+
+  _createClass(Owner, [{
+    key: "render",
+    value: function render() {
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "page text-center"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_layouts_Menu__WEBPACK_IMPORTED_MODULE_2__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(mdbreact__WEBPACK_IMPORTED_MODULE_4__["MDBContainer"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(mdbreact__WEBPACK_IMPORTED_MODULE_4__["MDBRow"], {
+        className: "spacetop"
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(mdbreact__WEBPACK_IMPORTED_MODULE_4__["MDBRow"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+        className: "h1 text-center mb-4"
+      }, "Make faster your sell or rent")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(mdbreact__WEBPACK_IMPORTED_MODULE_4__["MDBRow"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Sing in for free.")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(mdbreact__WEBPACK_IMPORTED_MODULE_4__["MDBRow"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(mdbreact__WEBPACK_IMPORTED_MODULE_4__["MDBCol"], {
+        md: "6"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("form", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+        className: "h5 text-center mb-4"
+      }, "Write to us"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "grey-text"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(mdbreact__WEBPACK_IMPORTED_MODULE_4__["MDBInput"], {
+        label: "Your name",
+        icon: "user",
+        group: true,
+        type: "text",
+        validate: true,
+        error: "wrong",
+        success: "right"
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(mdbreact__WEBPACK_IMPORTED_MODULE_4__["MDBInput"], {
+        label: "Your email",
+        icon: "envelope",
+        group: true,
+        type: "email",
+        validate: true,
+        error: "wrong",
+        success: "right"
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(mdbreact__WEBPACK_IMPORTED_MODULE_4__["MDBInput"], {
+        label: "Subject",
+        icon: "tag",
+        group: true,
+        type: "text",
+        validate: true,
+        error: "wrong",
+        success: "right"
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(mdbreact__WEBPACK_IMPORTED_MODULE_4__["MDBInput"], {
+        type: "textarea",
+        rows: "2",
+        label: "Your message",
+        icon: "pencil-alt"
+      })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "text-center"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(mdbreact__WEBPACK_IMPORTED_MODULE_4__["MDBBtn"], {
+        outline: true,
+        color: "secondary"
+      }, "Send", " ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(mdbreact__WEBPACK_IMPORTED_MODULE_4__["MDBIcon"], {
+        far: true,
+        icon: "paper-plane",
+        className: "ml-1"
+      }))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(mdbreact__WEBPACK_IMPORTED_MODULE_4__["MDBCol"], {
+        md: "6"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "We're here to help you sell or rent your home!"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "If you're beginning the process of selling or renting your home, you may feel a bit overwhelmed. Sure, there are a lot of resources available today, but where do you begin? Join our team that's focused on bringing together homeowners, real estate agents, photographers, and virtual tour creators. We can work together to help you find the right buyer or renter for your home."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "Add Your Profile"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Tell our visitors more about you and your property. Although you want to be complete about amenities and features your home offers, don't forget to tell your unique story. Everyone loves to be part of a great tale. Share the historic story of your home. Explain why it has unusual features. Help potential buyers or renters envision themselves taking advantage of all your home has to offer.")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_layouts_Footerbar__WEBPACK_IMPORTED_MODULE_3__["default"], null));
+    }
+  }]);
+
+  return Owner;
+}(react__WEBPACK_IMPORTED_MODULE_0__["Component"]);
+
+
+
+if (document.getElementById("owner")) {
+  react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.render(react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Owner, null), document.getElementById("owner"));
+}
+
+/***/ }),
+
+/***/ "./resources/js/components/Photography.jsx":
+/*!*************************************************!*\
+  !*** ./resources/js/components/Photography.jsx ***!
+  \*************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Photography; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _layouts_Menu__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./layouts/Menu */ "./resources/js/components/layouts/Menu.jsx");
+/* harmony import */ var _layouts_Footerbar__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./layouts/Footerbar */ "./resources/js/components/layouts/Footerbar.jsx");
+/* harmony import */ var mdbreact__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! mdbreact */ "./node_modules/mdbreact/dist/mdbreact.esm.js");
+function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+
+
+
+
+
+
+var Photography =
+/*#__PURE__*/
+function (_Component) {
+  _inherits(Photography, _Component);
+
+  function Photography() {
+    _classCallCheck(this, Photography);
+
+    return _possibleConstructorReturn(this, _getPrototypeOf(Photography).apply(this, arguments));
+  }
+
+  _createClass(Photography, [{
+    key: "render",
+    value: function render() {
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "page text-center"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_layouts_Menu__WEBPACK_IMPORTED_MODULE_2__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(mdbreact__WEBPACK_IMPORTED_MODULE_4__["MDBContainer"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(mdbreact__WEBPACK_IMPORTED_MODULE_4__["MDBRow"], {
+        className: "spacetop"
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(mdbreact__WEBPACK_IMPORTED_MODULE_4__["MDBRow"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+        className: "h1 text-center mb-4"
+      }, "Making Your Passion a Career")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(mdbreact__WEBPACK_IMPORTED_MODULE_4__["MDBRow"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "Add Your Profile"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "If you're a high-quality photographer who specializes in showcasing real estate, we want to invite you to join our community. By attracting both realtors and private homeowners who are looking to sell their properties, we'll be building your potential customer base for you."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "Expand Your Offerings"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "If you haven't done so already, you may want to consider broadening your product offerings to include virtual tour production. It's a service that's in high-demand, and your background as a professional photographer gives you an advantage. After all, you will already have access to customers looking for still pictures of their homes. Upsell a video service and help your clients offer a virtual tour of their properties."))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(mdbreact__WEBPACK_IMPORTED_MODULE_4__["MDBRow"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(mdbreact__WEBPACK_IMPORTED_MODULE_4__["MDBCol"], {
+        md: "6"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("form", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+        className: "h5 text-center mb-4"
+      }, "Write to us"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "grey-text"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(mdbreact__WEBPACK_IMPORTED_MODULE_4__["MDBInput"], {
+        label: "Your name",
+        icon: "user",
+        group: true,
+        type: "text",
+        validate: true,
+        error: "wrong",
+        success: "right"
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(mdbreact__WEBPACK_IMPORTED_MODULE_4__["MDBInput"], {
+        label: "Your email",
+        icon: "envelope",
+        group: true,
+        type: "email",
+        validate: true,
+        error: "wrong",
+        success: "right"
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(mdbreact__WEBPACK_IMPORTED_MODULE_4__["MDBInput"], {
+        label: "Subject",
+        icon: "tag",
+        group: true,
+        type: "text",
+        validate: true,
+        error: "wrong",
+        success: "right"
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(mdbreact__WEBPACK_IMPORTED_MODULE_4__["MDBInput"], {
+        type: "textarea",
+        rows: "2",
+        label: "Your message",
+        icon: "pencil-alt"
+      })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "text-center"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(mdbreact__WEBPACK_IMPORTED_MODULE_4__["MDBBtn"], {
+        outline: true,
+        color: "secondary"
+      }, "Send", " ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(mdbreact__WEBPACK_IMPORTED_MODULE_4__["MDBIcon"], {
+        far: true,
+        icon: "paper-plane",
+        className: "ml-1"
+      }))))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_layouts_Footerbar__WEBPACK_IMPORTED_MODULE_3__["default"], null));
+    }
+  }]);
+
+  return Photography;
+}(react__WEBPACK_IMPORTED_MODULE_0__["Component"]);
+
+
+
+if (document.getElementById("photography")) {
+  react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.render(react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Photography, null), document.getElementById("photography"));
+}
+
+/***/ }),
+
+/***/ "./resources/js/components/Realestate.jsx":
+/*!************************************************!*\
+  !*** ./resources/js/components/Realestate.jsx ***!
+  \************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Realestate; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _layouts_Menu__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./layouts/Menu */ "./resources/js/components/layouts/Menu.jsx");
+/* harmony import */ var _layouts_Footerbar__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./layouts/Footerbar */ "./resources/js/components/layouts/Footerbar.jsx");
+/* harmony import */ var mdbreact__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! mdbreact */ "./node_modules/mdbreact/dist/mdbreact.esm.js");
+function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+
+
+
+
+
+
+var Realestate =
+/*#__PURE__*/
+function (_Component) {
+  _inherits(Realestate, _Component);
+
+  function Realestate() {
+    _classCallCheck(this, Realestate);
+
+    return _possibleConstructorReturn(this, _getPrototypeOf(Realestate).apply(this, arguments));
+  }
+
+  _createClass(Realestate, [{
+    key: "render",
+    value: function render() {
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "page text-center"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_layouts_Menu__WEBPACK_IMPORTED_MODULE_2__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(mdbreact__WEBPACK_IMPORTED_MODULE_4__["MDBContainer"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(mdbreact__WEBPACK_IMPORTED_MODULE_4__["MDBRow"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(mdbreact__WEBPACK_IMPORTED_MODULE_4__["MDBRow"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+        className: "h1 text-center mb-4"
+      }, "Real Estate")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(mdbreact__WEBPACK_IMPORTED_MODULE_4__["MDBRow"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Sing in for free.")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(mdbreact__WEBPACK_IMPORTED_MODULE_4__["MDBRow"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(mdbreact__WEBPACK_IMPORTED_MODULE_4__["MDBCol"], {
+        md: "6"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("form", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+        className: "h5 text-center mb-4"
+      }, "Write to us"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "grey-text"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(mdbreact__WEBPACK_IMPORTED_MODULE_4__["MDBInput"], {
+        label: "Your name",
+        icon: "user",
+        group: true,
+        type: "text",
+        validate: true,
+        error: "wrong",
+        success: "right"
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(mdbreact__WEBPACK_IMPORTED_MODULE_4__["MDBInput"], {
+        label: "Your email",
+        icon: "envelope",
+        group: true,
+        type: "email",
+        validate: true,
+        error: "wrong",
+        success: "right"
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(mdbreact__WEBPACK_IMPORTED_MODULE_4__["MDBInput"], {
+        label: "Subject",
+        icon: "tag",
+        group: true,
+        type: "text",
+        validate: true,
+        error: "wrong",
+        success: "right"
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(mdbreact__WEBPACK_IMPORTED_MODULE_4__["MDBInput"], {
+        type: "textarea",
+        rows: "2",
+        label: "Your message",
+        icon: "pencil-alt"
+      })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "text-center"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(mdbreact__WEBPACK_IMPORTED_MODULE_4__["MDBBtn"], {
+        outline: true,
+        color: "secondary"
+      }, "Send", " ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(mdbreact__WEBPACK_IMPORTED_MODULE_4__["MDBIcon"], {
+        far: true,
+        icon: "paper-plane",
+        className: "ml-1"
+      }))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(mdbreact__WEBPACK_IMPORTED_MODULE_4__["MDBCol"], {
+        md: "6"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "List Your Properties"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Finally, don't forget to list your current properties on our site. As we drive traffic to our web page, we want to showcase the best homes available for sale. Our site will make it easy for potential buyers to sort and review their top choices and take advantage of the beautiful photography and virtual tours to learn more about their potential home."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "Add Your Profile"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Tell our visitors more about you and your real estate business. Tout your strengths. Showcase your skills. And attract more buyers and sellers to work with you to manage their real estate needs."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "Offer a Virtual Tour"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Although virtual tours used to be rare, they are more commonplace today. Potential buyers expect to be able to gather a great deal of information before they ever jump in their car to physically go to a house. Work with our virtual tour creators to generate an attractive and appealing first visit to all your properties. Allow potential buyers to explore both the inside of a home with 360-degree views and take a virtual walk around the outside of the home. Our virtual tour experts can help you put together a package that will boost your inquiries.")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_layouts_Footerbar__WEBPACK_IMPORTED_MODULE_3__["default"], null));
+    }
+  }]);
+
+  return Realestate;
+}(react__WEBPACK_IMPORTED_MODULE_0__["Component"]);
+
+
+
+if (document.getElementById("realestate")) {
+  react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.render(react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Realestate, null), document.getElementById("realestate"));
+}
+
+/***/ }),
+
+/***/ "./resources/js/components/Rent.jsx":
+/*!******************************************!*\
+  !*** ./resources/js/components/Rent.jsx ***!
+  \******************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Rent; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _layouts_Menu__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./layouts/Menu */ "./resources/js/components/layouts/Menu.jsx");
+/* harmony import */ var _layouts_Footerbar__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./layouts/Footerbar */ "./resources/js/components/layouts/Footerbar.jsx");
+function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+
+
+
+
+
+var Rent =
+/*#__PURE__*/
+function (_Component) {
+  _inherits(Rent, _Component);
+
+  function Rent() {
+    _classCallCheck(this, Rent);
+
+    return _possibleConstructorReturn(this, _getPrototypeOf(Rent).apply(this, arguments));
+  }
+
+  _createClass(Rent, [{
+    key: "render",
+    value: function render() {
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "page text-center"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_layouts_Menu__WEBPACK_IMPORTED_MODULE_2__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "Rent house, apartament, condon, studio"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_layouts_Footerbar__WEBPACK_IMPORTED_MODULE_3__["default"], null));
+    }
+  }]);
+
+  return Rent;
+}(react__WEBPACK_IMPORTED_MODULE_0__["Component"]);
+
+
+
+if (document.getElementById("rent")) {
+  react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.render(react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Rent, null), document.getElementById("rent"));
+}
+
+/***/ }),
+
+/***/ "./resources/js/components/Sell.jsx":
+/*!******************************************!*\
+  !*** ./resources/js/components/Sell.jsx ***!
+  \******************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Sell; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var mdbreact__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! mdbreact */ "./node_modules/mdbreact/dist/mdbreact.esm.js");
+/* harmony import */ var _layouts_Menu__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./layouts/Menu */ "./resources/js/components/layouts/Menu.jsx");
+/* harmony import */ var _layouts_Footerbar__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./layouts/Footerbar */ "./resources/js/components/layouts/Footerbar.jsx");
+function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+
+
+
+
+
+
+var Sell =
+/*#__PURE__*/
+function (_Component) {
+  _inherits(Sell, _Component);
+
+  function Sell() {
+    _classCallCheck(this, Sell);
+
+    return _possibleConstructorReturn(this, _getPrototypeOf(Sell).apply(this, arguments));
+  }
+
+  _createClass(Sell, [{
+    key: "render",
+    value: function render() {
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "page text-center"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_layouts_Menu__WEBPACK_IMPORTED_MODULE_3__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(mdbreact__WEBPACK_IMPORTED_MODULE_2__["MDBRow"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "Sell your house....")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(mdbreact__WEBPACK_IMPORTED_MODULE_2__["MDBRow"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(mdbreact__WEBPACK_IMPORTED_MODULE_2__["MDBCol"], {
+        size: "4"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Work with Realtors, get estimate ")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(mdbreact__WEBPACK_IMPORTED_MODULE_2__["MDBCol"], {
+        size: "4"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Sell it yourself, ")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(mdbreact__WEBPACK_IMPORTED_MODULE_2__["MDBCol"], {
+        size: "4"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Personalized support, "))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(mdbreact__WEBPACK_IMPORTED_MODULE_2__["MDBRow"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(mdbreact__WEBPACK_IMPORTED_MODULE_2__["MDBBtn"], {
+        color: "primary",
+        href: "#"
+      }, "Find my agent")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_layouts_Footerbar__WEBPACK_IMPORTED_MODULE_4__["default"], null));
+    }
+  }]);
+
+  return Sell;
+}(react__WEBPACK_IMPORTED_MODULE_0__["Component"]);
+
+
+
+if (document.getElementById("sell")) {
+  react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.render(react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Sell, null), document.getElementById("sell"));
 }
 
 /***/ }),
