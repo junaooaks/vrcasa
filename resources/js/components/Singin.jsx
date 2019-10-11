@@ -16,7 +16,7 @@ import {
 
 const SinginPage = () => {
     return (
-        <div>
+        <div className="page text-center">
             <Menu />
 
             <MDBContainer>

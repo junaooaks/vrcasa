@@ -16,7 +16,7 @@ import {
 
 const FormPage = () => {
     return (
-        <div>
+        <div className="page text-center">
             <Menu />
 
             <MDBContainer className="spacetop">
