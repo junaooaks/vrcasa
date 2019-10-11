@@ -72,7 +72,7 @@ export default class Menu extends Component {
                                     </button>
 
                                     <div className="rd-navbar-brand">
-                                        <a href="">
+                                        <a href="/">
                                             <img
                                                 width="70"
                                                 height="70"
@@ -91,9 +91,9 @@ export default class Menu extends Component {
                                                     <li className="active">
                                                         <a href="/">
                                                             <img
-                                                                width="217"
-                                                                height="36"
-                                                                src="assets/images/logo-dark.png"
+                                                                width="70"
+                                                                height="70"
+                                                                src="assets/logo.png"
                                                                 alt=""
                                                             />
                                                         </a>

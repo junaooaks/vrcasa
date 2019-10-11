@@ -84316,7 +84316,7 @@ function (_Component) {
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "rd-navbar-brand"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-        href: ""
+        href: "/"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
         width: "70",
         height: "70",
@@ -84337,9 +84337,9 @@ function (_Component) {
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
         href: "/"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        width: "217",
-        height: "36",
-        src: "assets/images/logo-dark.png",
+        width: "70",
+        height: "70",
+        src: "assets/logo.png",
         alt: ""
       }))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
         className: "rd-navbar-nav "
